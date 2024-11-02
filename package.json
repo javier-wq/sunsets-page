@@ -1,0 +1,30 @@
+{
+  "name": "sunsets-page",
+  "version": "1.0.0",
+  "description": "Page about sunsets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javier-wq/sunsets-page.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp",
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Javier Monge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javier-wq/sunsets-page/issues"
+  },
+  "homepage": "https://github.com/javier-wq/sunsets-page#readme",
+  "devDependencies": {
+    "sass": "^1.80.6"
+  }
+}
