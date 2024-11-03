@@ -372,22 +372,39 @@ body > section {
 }
 
 .header {
-  background-color: #32adfe;
+  background-color: #460f02;
 }
 .header .contenido-header {
   padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+@media (min-width: 768px) {
+  .header .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .header h1 {
   color: #ffffff;
-  margin: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header h1 {
+    text-align: left;
+    margin: 0;
+  }
 }
 
 .navegacion-principal {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
+}
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+  }
 }
 .navegacion-principal a {
   color: #ffffff;
@@ -395,4 +412,200 @@ body > section {
 }
 .navegacion-principal a:hover {
   color: #ffc120;
+}
+
+.video {
+  position: relative;
+  min-height: 50rem;
+  max-height: 70rem;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+}
+.video video {
+  display: block;
+  width: auto;
+}
+@media (min-width: 1200px) {
+  .video video {
+    width: 100%;
+  }
+}
+
+.contenido-video {
+  z-index: 10;
+}
+.contenido-video h2 {
+  color: #ffffff;
+  font-size: 7rem;
+  margin: 0;
+}
+.contenido-video p {
+  background-color: #fff8eb;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.sobre-atardecer {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .sobre-atardecer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.contenido-atardecer h2 {
+  margin-bottom: 2rem;
+}
+.contenido-atardecer .desc {
+  color: #E78F81;
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  .contenido-atardecer {
+    margin-top: 5rem;
+  }
+}
+
+.atardeceres {
+  background-color: #E78F81;
+}
+.atardeceres h3, .atardeceres .dia {
+  text-align: center;
+  color: #ffffff;
+}
+.atardeceres .dia {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.atardecer-contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .atardecer-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.atardecer {
+  padding-top: 2rem;
+}
+.atardecer .nombre-continente {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
+}
+
+.bg-celeste {
+  background-color: #D4F6FF;
+}
+.bg-celeste li:nth-child(odd) {
+  background-color: rgb(237.5, 251.3372093023, 255);
+}
+
+.bg-verde {
+  background-color: #DFF2EB;
+}
+.bg-verde li:nth-child(odd) {
+  background-color: rgb(241.1333333333, 249.3666666667, 246.3333333333);
+}
+
+.contenedor-sucripciones {
+  background-color: #DFF2EB;
+}
+.contenedor-sucripciones .sucripciones {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contenedor-sucripciones .sucripciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.sub {
+  transition: transform 0.3s ease-in-out;
+}
+.sub:hover {
+  transform: scale(1.1);
+}
+.sub-nombre {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-align: center;
+}
+.sub-header, .sub-footer {
+  padding: 0.5rem;
+}
+.sub-header p, .sub-footer p {
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+}
+.sub-header {
+  background-color: #3C3D37;
+}
+.sub-header p {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+.sub-body {
+  background-color: #ffffff;
+}
+.sub-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sub-body ul li {
+  padding: 2rem;
+  border-bottom: 1px solid #3C3D37;
+}
+.sub-footer {
+  background-color: #ffffff;
+  padding: 3rem;
+}
+.sub-footer p {
+  font-size: 2.8rem;
+  font-weight: 900;
+  background-color: #295F98;
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+.sub-footer p:hover {
+  background-color: rgb(19.3316062176, 44.792746114, 71.6683937824);
 }
