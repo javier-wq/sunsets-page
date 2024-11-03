@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .atardeceres{
     background-color: v.$orange;
@@ -46,11 +47,13 @@
     }
 }
 
+
+
 .bg-celeste {
     background-color: v.$skyblue;
 
     li:nth-child(odd) {
-        background-color: lighten(v.$skyblue, 5%);
+        background-color: color.adjust(v.$skyblue, $lightness: 5%);
     }
 }
 
@@ -58,6 +61,6 @@
     background-color: v.$green;
 
     li:nth-child(odd) {
-        background-color: lighten(v.$green, 5%);
+        background-color: color.adjust(v.$green, $lightness: 5%);
     }
 }

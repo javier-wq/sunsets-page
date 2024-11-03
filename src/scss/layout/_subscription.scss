@@ -1,5 +1,6 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+@use 'sass:color';
 
 .contenedor-sucripciones {
     background-color: v.$light;
@@ -72,7 +73,7 @@
             border-radius: 1rem;
 
             &:hover {
-                background-color: darken(v.$blue, 20);
+                background-color: color.adjust(v.$blue, $lightness: -20%);
             }
         }
     }
