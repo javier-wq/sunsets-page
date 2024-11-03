@@ -38,7 +38,10 @@
 
     <section class="sobre-atardecer">
         <div class="imagen">
-            <img src="src/assets/img/sunset.jpg" alt="Sunset">
+            <picture>
+                <source srcset="build/img/sunset.webp" type="image/webp">
+                <img width="300" height="200" loading="lazy" src="build/img/sunset.jpg" alt="Sunset">
+            </picture>
         </div>
 
         <div class="contenido-atardecer">

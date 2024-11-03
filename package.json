@@ -27,8 +27,11 @@
   },
   "homepage": "https://github.com/javier-wq/sunsets-page#readme",
   "devDependencies": {
+    "glob": "^11.0.0",
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.80.6"
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.80.6",
+    "sharp": "^0.33.5"
   }
 }
